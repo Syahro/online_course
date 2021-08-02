@@ -1,6 +1,6 @@
 # online_course
 
-A new Hotel Flutter project.
+A new Online Course Flutter project.
 
 design by BWA.
 
