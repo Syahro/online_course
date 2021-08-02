@@ -14,43 +14,6 @@ class HomePage extends StatelessWidget {
       body: SafeArea(
         child: Stack(
           children: [
-            Container(
-              margin: EdgeInsets.fromLTRB(
-                defaultMargin,
-                12,
-                defaultMargin,
-                12,
-              ),
-              height: 54,
-              width: double.infinity,
-              color: backgroundColor,
-              child: Row(
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Image.asset(
-                      'assets/user.png',
-                      width: 30,
-                      height: 30,
-                    ),
-                  ),
-                  Spacer(),
-                  Icon(
-                    Icons.search,
-                    size: 25,
-                    color: blackCOlor.withOpacity(0.7),
-                  ),
-                  SizedBox(
-                    width: 12,
-                  ),
-                  Image.asset(
-                    'assets/notif.png',
-                    width: 24,
-                    height: 24,
-                  ),
-                ],
-              ),
-            ),
             ListView(
               children: [
                 SizedBox(
@@ -220,6 +183,50 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(
+                defaultMargin,
+                0,
+                defaultMargin,
+                12,
+              ),
+              height: 54,
+              width: double.infinity,
+              color: backgroundColor,
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Row(
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(20),
+                        child: Image.asset(
+                          'assets/user.png',
+                          width: 30,
+                          height: 30,
+                        ),
+                      ),
+                      Spacer(),
+                      Icon(
+                        Icons.search,
+                        size: 25,
+                        color: blackCOlor.withOpacity(0.7),
+                      ),
+                      SizedBox(
+                        width: 12,
+                      ),
+                      Image.asset(
+                        'assets/notif.png',
+                        width: 24,
+                        height: 24,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ],
         ),
